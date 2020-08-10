@@ -1,0 +1,136 @@
+<!--
+    nowrap -> default, impede que quebre
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .container {
+            padding: 2rem; /* Medida do Bootstrap3 */
+        }
+
+        .row > .col, /* row eh filho de col */
+        .row > [class^=col-],
+        .bg { 
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(243, 117, 32, .15); /*rgba -> a = alpha (transparencia) */
+            border: 1px solid rgba(243, 117, 32, .2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--nowrap -> impede que quebre linha-->
+        <!--overflow:auto -> Cria uma barra de movimento-->
+        <div class="d-flex flex-nowrap bg" style="overflow: auto">
+            
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+
+        </div>
+
+        <!--whap -> permite que quebre linha-->
+        <div class="d-flex flex-wrap bg" style="overflow: auto">
+            
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+
+        </div>
+
+        <!--whap-reverse -> A quebra eh invertida-->
+        <div class="d-flex flex-wrap-reverse bg" style="overflow: auto">
+            
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+
+        </div>
+
+        <!--order-first -> Deixa no comeco-->
+        <div class="d-flex flex-wrap bg" style="overflow: auto">
+            
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill order-first p-2">Ultimo Item</div>
+
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-content-center bg" style="height: 80vh;">
+            
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+            <div class="bg flex-fill p-2">Item</div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

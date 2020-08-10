@@ -1,0 +1,84 @@
+<!--
+    justify -> Trata de posicoes do conteudo
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .container {
+            padding: 2rem; /* Medida do Bootstrap3 */
+        }
+
+        .row > .col, /* row eh filho de col */
+        .row > [class^=col-],
+        .bg { 
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(243, 117, 32, .15); /*rgba -> a = alpha (transparencia) */
+            border: 1px solid rgba(243, 117, 32, .2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--Alinha na esquerda-->
+        <div class="d-flex justify-content-start bg">
+            
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+            
+        </div>
+
+        <!--Alinha no final-->
+        <div class="d-flex justify-content-end bg">
+            
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+            
+        </div>
+
+        <!--Alinha no centro-->
+        <div class="d-flex justify-content-center bg">
+            
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+            
+        </div>
+
+        <!--Alinha justificado, de maneira uniforme-->
+        <div class="d-flex justify-content-between bg">
+            
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+            
+        </div>
+
+        <!--Alinha justificado, em volta tera mesmo espaco-->
+        <div class="d-flex justify-content-around bg">
+            
+            <div class="bg p-2">1</div>
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
