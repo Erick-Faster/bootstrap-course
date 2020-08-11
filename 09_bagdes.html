@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- Tamanho dos Badges se adapta ao tamanho -->
+    <h1>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h1>
+    <h2>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h2>
+    <h3>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h3>
+    <h4>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h4>
+    <h5>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h5>
+    <h6>Hcode Treinamentos <span class="badge badge-primary">Novo</span></h6>
+
+    <hr>
+
+    <!-- Badge dentro de um botao-->
+    <button type="button" class='btn btn-primary'>Clique aqui <span class="badge badge-light">0</span></button>
+
+    <hr>
+
+    <!--Badge com acessibilidade -->
+    <button type="button" class="btn btn-primary">
+        Caixa de Entrada <span class="badge badge-light">5</span>
+        <span class="sr-only">Há 5 mensagens não lidas</span>
+    </button>
+
+    <!-- Varias cores de badge-->
+    <span class="badge badge-primary">1</span>
+    <span class="badge badge-secondary">2</span>
+    <span class="badge badge-success">3</span>
+    <span class="badge badge-danger">4</span>
+    <span class="badge badge-warning">5</span>
+    <span class="badge badge-info">6</span>
+    <span class="badge badge-dark">7</span>
+    <span class="badge badge-light">8</span>
+
+    <hr>
+
+    <!-- Badge com borda redonda-->
+    <span class="badge badge-primary">OK</span>
+    <span class="badge badge-primary badge-pill">OK</span>
+
+    <hr>
+
+    <!-- Bagde clicavel -->
+    <a href="#" class="badge badge-success">Verde</a>
+
+
+    <!-- Botao. Qdo clicar, sobe um valor no badge (JQuery) -->
+    <button id="btn-click" type="button" class='btn btn-primary'>Clique aqui <span class="badge badge-light">0</span></button>
+
+
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Script para somar numero ao badge ao apertar botao -->
+    <script>
+
+    $(() => {
+
+        $('#btn-click').on('click', e => {
+
+            const valor = parseInt($(e.target).find('.badge').text());
+
+            $(e.target).find('.badge').text(valor + 1);
+
+        });
+
+    });
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="alert alert-success" role="alert">
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias id sunt nostrum illo aperiam pariatur, doloremque asperiores reiciendis cumque quo similique voluptas voluptatem cupiditate. Cupiditate deleniti totam alias esse facilis!
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-secondary">
+                    Hello Hcode!
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="alert alert-primary">
+                    Hello Hcode2!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">
+                    Error!
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="alert alert-warning">
+                    Warning!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alert alert-info">
+            Information at this link!
+            <a href="www.google.com.br">Google</a>
+        </div>
+
+        <div class="alert alert-dark">
+            <h4>Titulo</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sint officia ipsa aliquam dolor praesentium soluta distinctio rerum debitis animi aspernatur aliquid corrupti incidunt possimus alias, repellat natus laudantium? Alias.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, earum, dolore eaque deleniti quos a minima nisi amet ullam maxime tempora nobis assumenda asperiores delectus odit illo illum, totam perferendis?</p>
+    
+        </div>
+
+        <!-- Janela que fecha. Precisa da importacao do JQuery-->
+        <div class="alert alert-success dismissible fade show">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid, natus quis aspernatur enim quam quae nemo? Numquam rem repellat, architecto magni libero facere illo, dignissimos porro, tenetur incidunt sapiente.
+            <button class="close" data-dismiss='alert' aria-label='close'>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <button id=btn-close-all type='button'>Fechar todos os alertas</button>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Botao para fechar todas as notificacoes com JQuery -->
+    <script>
+        $(() => {
+
+            $('#btn-close-all').on('click', e => {
+
+                $('.alert').alert('close');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

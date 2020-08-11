@@ -1,0 +1,130 @@
+<!--
+
+    .row>.col>input.btn.btn-primary+a.btn.btn-primary+button.btn.btn-primary
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Tipos de btn -->
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary">Ok</button>
+                <button class="btn btn-secondary">Ok</button>
+                <button class="btn btn-success">Ok</button>
+                <button class="btn btn-danger">Ok</button>
+                <button class="btn btn-warning">Ok</button>
+                <button class="btn btn-info">Ok</button>
+                <button class="btn btn-dark">Ok</button>
+                <button class="btn btn-light">Ok</button>
+                <button class="btn btn-link">Ok</button>
+            </div>
+        </div>
+
+        <!-- Diferencas entre input, a e button-->
+        <div class="row">
+            <div class="col">
+                <input type="button" class="btn btn-primary" value=OK>
+                <a href="" class="btn btn-primary">OK</a>
+                <button class="btn btn-primary">OK</button>
+            </div>
+        </div>
+
+        <!-- Bordas do botao-->
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-outline-primary">Ok</button>
+                <button class="btn btn-outline-danger">Ok</button>
+            </div>
+        </div>
+
+        <!-- Editar tamanho do botao -->
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success btn-lg">ok</button>
+                <button class="btn btn-success btn-sm">ok</button>
+            </div>
+        </div> 
+        
+        <!-- Transformar botao em bloco-->
+        <div class="row">
+            <div class="col"><button class="btn btn-primary btn-block">OK</button></div>
+        </div>
+
+        <!-- Efeito de botao ja pressionado-->
+        <div class="row">
+            <div class="col"><a href="#" class="btn btn-primary active btn-block">OK</a></div>
+        </div>
+
+        <!-- Inicar ja pressionado-->
+        <div class="row">
+            <div class="col"><a href="#" class="btn btn-primary active btn-block" aria-pressed=true>OK</a></div>
+        </div>
+
+        <!-- botao desabilitado (da pra mudar com cor tb)-->
+        <div class="row">
+            <div class="col"><button class="btn btn-primary btn-block" disabled>OK</button></div>
+        </div>
+
+        <!-- Mantem botao afundado qdo clica-->
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" id="btn-auto-save" data-toggle="button">Auto Save</button>
+            </div>
+        </div>
+
+        <!-- Toggle em Grupo -> Habilita 1, desabilita outro-->
+        <div class="row">
+            <div class="col">
+                <div class="btn-group btn-group-toggle" data-toggle='buttons'>
+                    <label for="option1" class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" checked>1</label>
+                    <label for="option2" class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2">2</label>
+                    <label for="option3" class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3">3</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botao que ativa e desativa-->
+        <button class="btn btn-primary" id="btn-click">Ativa/Desativa Auto Save</button>
+
+
+    </div>
+
+
+    
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Manipula botao remotamente -->
+    <script>
+
+    $(() => {
+
+        $('#btn-click').on('click', e => {
+
+            $('#btn-auto-save').button('toggle');
+
+        });
+
+    });
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- Unsplash.com -> Otima source de imagens-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--img-fluid -> Deixa a imagem justa ao viewport-->
+
+                <img src="assets/img/unsplash.jpg" alt="unsplash" class='img-fluid'>
+
+            </div>
+            <div class="col">
+                <img src="assets/img/unsplash.jpg" alt="unsplash" class='img-fluid'>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <!-- Deixa uma borda branca -->
+                <img src="assets/img/unsplash.jpg" alt="unsplash" class='img-thumbnail'>
+
+            </div>
+            <div class="col">
+                <!-- Deixa a imagem levemente arredondada-->
+                <img src="assets/img/unsplash.jpg" alt="unsplash" class='img-fluid rounded'>
+            </div>
+        </div>
+
+        <!-- d-block mx-auto -> alinha no centro-->
+        <img src="assets/img/unsplash.jpg" alt="unsplash" class='rounded d-block mx-auto' style="width: 256px">
+
+        <hr>
+
+        <picture>
+            <!-- source -> Caso nao carregue, esta eh uma opcao-->
+            <source srcset="assets/img/unsplash.jpg">
+            <img src="assets/img/unsplash.jpg" alt="unsplash" class="img-fluid img-thumbnail">
+        </picture>
+
+        <!-- Add texto na imagem -> vincula qdo pesquisa no google, por ex-->
+        <figure class="figure">
+            <img src="assets/img/unsplash.jpg" alt="unsplash" class="figure-img img-fluid">
+
+            <figcaption class="figure-caption text-center">
+                Legenda da Imagem
+            </figcaption>
+
+        </figure>
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

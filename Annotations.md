@@ -23,3 +23,12 @@
 
     .row>.col*3
     Cria row com 3 colunas
+
+            .row>.col>input.btn.btn-primary+a.btn.btn-primary+button.btn.btn-primary
+
+            .row>.col>button.btn.btn-success.btn-lg{ok}
+
+                    label.btn.btn-secondary*3>input:radio#option$
+
+            ($) -> 1,2,3...
+
