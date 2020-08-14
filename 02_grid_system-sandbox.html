@@ -1,8 +1,6 @@
 <!--
-    .row>.col.col-md-4.order-sm-$*3 -> $ fara 1,2,3
-
-    -> .order fara com que eu mude a ordem no grid system
-    -> .order-sm fara com que funcione somente no sm
+    .offset-sm-4 -> Faz de conta que tem algo aqui de 4 espacos.
+        -> Gera 4 espacos vazios
 -->
 
 <!DOCTYPE html>
@@ -29,15 +27,30 @@
 </head>
 <body>
 
-    <!-- Define a ordem -->
     <div class="container">
         <div class="row">
-            <div class="col col-md-3 order-sm-3">Primeiro</div>
-            <div class="col col-md-3 order-sm-2">Segundo</div>
-            <div class="col col-md-6 order-sm-1">Terceiro</div>
+            <div class="col-12"></div>
         </div>
-    </div>
 
+        <div class="row">
+            <div class="col-12 col-sm-4"></div>
+            <div class="col-12 col-sm-8">
+                
+                <div class="row">
+                    <div class="col-12"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+        </div>
+
+
+
+
+    </div>
 
     <script src="assets/js/jquery-3.4.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
