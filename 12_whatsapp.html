@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        header, footer{
+            background: #EEE;
+            padding: 5px;
+            min-height: 60px;
+        }
+
+        header img, .list-group img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header img {
+            margin-left: 16px;
+        }
+        main{
+            background-color: #e5ddd5;
+            min-height: calc(100vh - 121px) /*100% da tela - 60px header - 60px footer - 1px*/
+        }
+
+        header {
+            border-bottom: #DBDBDB 1px solid;
+        }
+
+        h6 {
+            margin: 0;
+        }
+        .timeago{
+            color: #999;
+            font-size: .8em; /* 1em = 16px */
+        }
+        .bagde-success {
+            background-color: #09d261;
+        }
+        #search {
+            background-color: #f8f8f8;
+            min-height: 50px;
+        }
+        #panel-left {
+            border-right: #dbdbdb 1px solid;
+            color: #4d4d4d;
+        }
+        #panel-left small {
+            color: #9b9b9b;
+        }
+
+        .list-group-item {
+            border-left: none;
+            border-right: none;
+            border-color: #f8f8f8;
+        }
+
+        /*Peguei esse do filter em inspect - nivel de especificidade */
+        .list-group-item:first-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 px-0" id="panel-left">
+                <header class='d-flex'>
+                    <img src="assets/layout-02/contact.svg" alt="avatar">
+                </header>
+
+                <div id="search"></div>
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item list-group-item-action d-flex align items-center">
+                        <img src="assets/layout-02/hcode-photo.svg" alt="Avatar">
+                        <div class="d-flex flex-column flex-fill">
+                            <h6>HCode</h6>
+                            <small>Djalma: Perdi</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <span class="timeago">16:11</span>
+                            <span class="badge badge-success badge-pill">1</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action d-flex align items-center">
+                        <img src="assets/layout-02/contact.svg" alt="Avatar">
+                        <div class="d-flex flex-column flex-fill">
+                            <h6>Aluno</h6>
+                            <small>Estou estudando</small>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <span class="timeago">Ontem</span>
+                            <span class="badge badge-success badge-pill"></span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-8 px-0 d-flex flex-column">
+
+                <header class= "d-flex align-center">
+                    <img src="assets/layout-02/contact.svg" alt="avatar">
+                    <div class="d-flex flex-column flex-fill">
+                        <h6>Hcode</h6>
+                        <small class="timeago">Visto por ultimo ontem</small>
+                    </div>
+                </header>
+            
+                <main></main>
+            
+                <footer></footer>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+ 
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
